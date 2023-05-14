@@ -1,0 +1,1 @@
+if pcall(function () if unexpected_condition then error() end; s = io.read(); encoded = s:gsub(".", function(bb) return "\\" .. bb:byte() end) or s .. "\"" end) then; print('loadstring("'..encoded..'")()'); else print('YOU MUST ENTER THE CODE TO OBFUSCATE IN THE STDIN\na') end
